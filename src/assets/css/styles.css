@@ -28,6 +28,7 @@ body {
 header {
   background: var(--color-primary);
   padding: 1rem 2rem;
+  position: relative;
 }
 
 header nav {
@@ -136,4 +137,85 @@ footer {
   padding: 2rem 1rem;
   background: #222;
   color: #fff;
+}
+
+/* Hamburger menu toggle */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1001;
+}
+
+/* Fluid media for responsive layouts */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile-first breakpoints */
+@media (max-width: 768px) {
+  /* Stack nav links vertically */
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header nav a {
+    margin: 0.5rem 0;
+  }
+  /* Hero adjustments */
+  .hero {
+    padding: 4rem 1rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  /* Grid stacks */
+  .features ul,
+  .pricing {
+    grid-template-columns: 1fr;
+  }
+  /* Reduce container padding */
+  .container {
+    padding: 0 0.5rem;
+  }
+  /* Show toggle button */
+  .menu-toggle {
+    display: block;
+  }
+  /* Mobile nav hidden by default */
+  #site-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: var(--color-primary);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1rem 0;
+    z-index: 1000;
+  }
+  /* Show when open */
+  #site-nav.open {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Full-width buttons */
+  .btn {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  /* Narrow testimonials */
+  .testimonials blockquote {
+    max-width: 100%;
+  }
 }
