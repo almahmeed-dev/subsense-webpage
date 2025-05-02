@@ -1,5 +1,7 @@
 name: Build and Deploy Eleventy Site
-
+permissions:
+  contents: write
+  pages: write
 on:
   push:
     branches: [ main ]
