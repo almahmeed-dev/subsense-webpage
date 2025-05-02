@@ -1,1 +1,1 @@
-document.getElementById("mc-embedded-subscribe-form").addEventListener("submit",(function(e){}));
+document.addEventListener("DOMContentLoaded",(()=>{const e=document.getElementById("mc-embedded-subscribe-form");e&&e.addEventListener("submit",(function(e){}));const t=document.getElementById("menu-toggle"),n=document.getElementById("site-nav");t&&n&&t.addEventListener("click",(()=>{console.log("Menu toggle clicked"),n.classList.toggle("open")}))}));
