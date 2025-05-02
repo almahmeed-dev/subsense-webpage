@@ -1,0 +1,16 @@
+{
+  "name": "subsense-website",
+  "version": "1.0.0",
+  "description": "Static site for SubSense built with Eleventy",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "html-minifier-terser": "^7.0.0",
+    "clean-css": "^5.3.2",
+    "terser": "^5.16.0",
+    "glob": "^8.1.0"
+  }
+}

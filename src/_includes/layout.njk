@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>{{ title }}</title>
+  <meta name='description' content='{{ description }}'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#0073E6">
+  <link rel="icon" href="/assets/images/placeholder-logo.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel='stylesheet' href='/assets/css/styles.css'>
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    #mc_embed_signup { background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:600px; }
+    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+      We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  </style>
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:image" content="{{ site.url }}/assets/images/placeholder-og.png">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@YourHandle">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:image" content="{{ site.url }}/assets/images/placeholder-og.png">
+  <!-- JSON-LD Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "{{ site.url }}",
+    "name": "SubSense",
+    "logo": "{{ site.url }}/assets/images/placeholder-logo.png",
+    "sameAs": [
+      "https://twitter.com/YourHandle",
+      "https://facebook.com/YourPage",
+      "https://linkedin.com/YourPage"
+    ]
+  }
+  </script>
+  <!-- JSON-LD WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "{{ site.url }}",
+    "name": "SubSense",
+    "description": "{{ description }}",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{{ site.url }}/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DS91HX68MK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DS91HX68MK');
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">
+        <img src="/assets/images/logo.svg" alt="SubSense Logo" class="logo" />
+      </a>
+      <a href='/'>Home</a>
+      <a href='/get-started/'>Get Started</a>
+      <a href='/pricing/'>Pricing</a>
+      <a href='/privacy/'>Privacy Policy</a>
+      <a href='/terms/'>Terms of Service</a>
+      <a href='/feedback/'>Feedback</a>
+    </nav>
+  </header>
+  <main class="container">
+    {{ content | safe }}
+  </main>
+  {% include 'footer.njk' %}
+  <script src='/assets/js/main.js'></script>
+</body>
+</html>
