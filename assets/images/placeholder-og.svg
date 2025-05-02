@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0073E6"/>
+  <text x="600" y="200" font-family="Montserrat, sans-serif" font-size="80" fill="#fff" text-anchor="middle">SubSense</text>
+  <polyline points="200,500 400,350 600,450 800,300 1000,400" stroke="#fff" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="200" cy="500" r="20" fill="#fff"/>
+  <circle cx="400" cy="350" r="20" fill="#fff"/>
+  <circle cx="600" cy="450" r="20" fill="#fff"/>
+  <circle cx="800" cy="300" r="20" fill="#fff"/>
+  <circle cx="1000" cy="400" r="20" fill="#fff"/>
+</svg>

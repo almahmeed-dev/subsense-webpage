@@ -1,0 +1,1 @@
+document.getElementById("mc-embedded-subscribe-form").addEventListener("submit",(function(e){}));

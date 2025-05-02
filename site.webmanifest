@@ -1,0 +1,16 @@
+{
+  "name": "SubSense",
+  "short_name": "SubSense",
+  "description": "Subscription management platform for SubSense.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0073E6",
+  "icons": [
+    {
+      "src": "/assets/images/placeholder-logo.svg",
+      "sizes": "400x400",
+      "type": "image/svg+xml"
+    }
+  ]
+}
