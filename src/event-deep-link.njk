@@ -1,0 +1,31 @@
+---
+title: "Event Deep Link"
+layout: layout.njk
+description: "Guide to implement & test SubSense In-App Event deep links"
+permalink: "/event-deep-link/"
+---
+
+<section class="event-deep-link">
+  <div class="container">
+    <h1>Event Deep Link</h1>
+    <p>Use this link in your App Store In-App Event to send users directly into SubSense’s new-features screen.</p>
+
+    <h2>Universal Link</h2>
+    <p>Recommended for iOS 9+:</p>
+    <pre><code>https://subsense.app.link/event/2.0-release</code></pre>
+
+    <h2>Custom URL Scheme</h2>
+    <p>If you prefer a scheme link, configure in Info.plist:</p>
+    <pre><code>subsense://event/2.0-release</code></pre>
+    <p>Handle in AppDelegate/SceneDelegate:</p>
+    <pre><code>func application(_ app: UIApplication, open url: URL, options: ...) -> Bool { /* deep-link logic */ }</code></pre>
+
+    <h2>Testing Deep Links</h2>
+    <ul>
+      <li>Simulator: <code>xcrun simctl openurl booted &lt;your-link&gt;</code></li>
+      <li>Device: tap the link in Mail or Notes</li>
+    </ul>
+
+    <a href="/" class="btn">Back to Home</a>
+  </div>
+</section>
