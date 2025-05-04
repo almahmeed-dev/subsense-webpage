@@ -1,0 +1,107 @@
+---
+title: "SubSense v2.0 Release"
+layout: layout.njk
+description: "Discover what's new in SubSense version 2.0."
+permalink: "/v2-release/"
+---
+
+<section class="v2-hero">
+  <div class="container">
+    <h1>SubSense v2.0</h1>
+    <p>Our biggest update yet: more performance, accessibility, and features.</p>
+  </div>
+</section>
+
+<section class="v2-features">
+  <div class="container">
+    <h2>What's New in v2.0</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Code Quality & Architecture</h3>
+        <ul>
+          <li>Modular separation (UI, networking, data layer)</li>
+          <li>Legacy Objective-C → Swift 5+ / SwiftUI migration</li>
+          <li>Third-party libraries updated to latest versions</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <h3>Performance & Stability</h3>
+        <ul>
+          <li>Cold/warm launch profiling</li>
+          <li>Instruments run for leaks and retain-cycle fixes</li>
+          <li>Automated UI-test coverage for critical flows</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <h3>Analytics & Instrumentation</h3>
+        <ul>
+          <li>DAU/MAU, retention, and funnel event verification</li>
+          <li>Error logging via Sentry / Firebase Crashlytics</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <h3>Localization</h3>
+        <ul>
+          <li>All UI strings moved to Localizable.strings</li>
+          <li>Text(LocalizedStringKey(...)) everywhere</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <h3>Dynamic Type & Accessibility</h3>
+        <ul>
+          <li>Semantic font styles (.largeTitle, .title3, etc.)</li>
+          <li>VoiceOver labels, hints, and combo elements</li>
+          <li>Decorative images hidden from screen readers</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <h3>Color Contrast</h3>
+        <ul>
+          <li>Text ↔ background ratios ≥ 4.5:1 (3:1 large text)</li>
+          <li>Theme palette adjusted for accessibility</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <h3>Onboarding Flow</h3>
+        <ul>
+          <li>Page-specific verbs for “Next” buttons</li>
+          <li>Clear CTAs: Continue, Allow Notifications, Import CSV…</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <h3>CSV Import Enhancements</h3>
+        <ul>
+          <li>Inline helper text for supported fields</li>
+          <li>Info popovers with header requirements</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <h3>Alerts & Descriptions</h3>
+        <ul>
+          <li>Concise titles and messages (&lt;3 lines)</li>
+          <li>Plain verbs: “Enable Reminders?”, “Import CSV”</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <h3>Tutorial & Tooltips</h3>
+        <ul>
+          <li>Subheads for key actions</li>
+          <li>Inline hints and popover tips</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <h3>Security & Privacy</h3>
+        <ul>
+          <li>HTTPS everywhere and ATS compliance</li>
+          <li>GDPR/CCPA opt-outs and secure token storage</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <a href="/get-started/" class="btn">Get Started with v2.0</a>
+  </div>
+</section>

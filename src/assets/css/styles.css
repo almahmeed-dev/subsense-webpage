@@ -81,15 +81,15 @@ header nav a {
 }
 
 .features {
-  padding: 4rem 1rem;
-  background: #fff;
+  background: #f0f8ff;
+  padding: 6rem 1rem;
 }
 
 .features ul {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .features li {
@@ -99,6 +99,12 @@ header nav a {
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   font-family: var(--font-body);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
 .testimonials {
